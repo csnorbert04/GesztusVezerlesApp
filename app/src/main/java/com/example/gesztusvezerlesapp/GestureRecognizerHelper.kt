@@ -49,7 +49,7 @@ class GestureRecognizerHelper(
         // bitmappá alakit
         val bitmap = imageProxy.toBitmap()
 
-        // előlapi kamera szóval tükrözünk preference kérdése
+        // előlapi kamera tükrözés
         val matrix = Matrix().apply {
             postRotate(imageProxy.imageInfo.rotationDegrees.toFloat())
             postScale(-1f, 1f, bitmap.width / 2f, bitmap.height / 2f)

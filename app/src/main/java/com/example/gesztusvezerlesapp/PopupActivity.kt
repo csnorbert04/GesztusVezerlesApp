@@ -72,7 +72,7 @@ class PopupActivity : AppCompatActivity(), GestureRecognizerHelper.GestureRecogn
     private fun showDialog1() {
         currentDialogState = 1
         currentAlertDialog = AlertDialog.Builder(this)
-            .setTitle("1. Kérdés (Yes / No)")
+            .setTitle("1. Kérdés")
             .setMessage("Készen állsz a folytatásra?\n\n👍 = Igen (Thumb Up)\n👎 = Nem (Thumb Down)")
             .setCancelable(false)
             .show()
@@ -81,8 +81,8 @@ class PopupActivity : AppCompatActivity(), GestureRecognizerHelper.GestureRecogn
     private fun showDialog2() {
         currentDialogState = 2
         currentAlertDialog = AlertDialog.Builder(this)
-            .setTitle("2. Kérdés (Több válasz)")
-            .setMessage("Melyik programozási nyelvet használjuk most?\n\n1️⃣ (Mutatóujj) =  Java\n2️⃣ (Hüvelyk+Mutató) =  Kotlin\n3️⃣ (Hüvelyk+Mutató+Középső) =  C++")
+            .setTitle("2. Kérdés")
+            .setMessage("Milyen programozási nyelven írodott a program?\n\n1️⃣ (Mutatóujj) =  Java\n2️⃣ (Hüvelyk+Mutató) =  Kotlin\n3️⃣ (Hüvelyk+Mutató+Középső) =  C++")
             .setCancelable(false)
             .show()
     }
